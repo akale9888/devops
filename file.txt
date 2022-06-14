@@ -1,0 +1,25 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('git push') {
+            steps {
+                echo'git push'
+            }
+        }
+          
+        stage('mvn build') {
+            steps {
+               sh'ls'
+            }
+        }
+         
+          stage('deploy') {
+            steps {
+               sh'ls'
+               }
+        }
+      }
+
+
+    }
